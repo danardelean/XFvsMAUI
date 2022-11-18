@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="FractlExplorer.MainPage"
+    Title="Fractl Explorer" BackgroundColor="Black"
+     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+     ios:Page.UseSafeArea="true">
+
+  <Grid>
+        <Image x:Name="imageHost"/>
+
+        <ContentView VerticalOptions="End" HorizontalOptions="Center" Padding="0,0,2,2">
+            <Label x:Name="timer"
+                  TextColor="White" FontSize="20" />
+        </ContentView>
+        <Button
+            TextColor="White"
+            x:Name="btnGenerateMandelbrot"
+            VerticalOptions="Start"
+                HorizontalOptions="Center"
+                Text="Generate"
+                Clicked="btnGenerateMandelbrot_Clicked"/>
+    </Grid>
+
+
+</ContentPage>
